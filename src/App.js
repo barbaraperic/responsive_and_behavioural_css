@@ -81,6 +81,7 @@ const ContactFormButton = styled.button`
   border-radius: 4px;
   background-color: hsl(300deg 10% 95%);
   cursor: pointer;
+  outline-offset: 4px;
 `
 
 
