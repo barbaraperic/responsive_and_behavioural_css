@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import Modal from './components/Modal'
+import Modal from './components/Modal';
+import ContactForm from './components/ContactForm';
 
 import "./App.css";
 
 function App() {
-  const [modal, setModal] = useState(false);
+  const [showModal, setShowModal] = useState(false);
 
   return (
     <>
@@ -23,12 +24,18 @@ function App() {
         </nav>
       </Header>
       <Main>
-        <ContactFormButton onClick={() => setModal(!modal)}>
+        <ContactFormButton onClick={() => setShowModal(true)}>
           Open Contact Form
         </ContactFormButton>
-        {modal && 
-          <Modal title="Contact us"/>
-        }
+
+        <Modal 
+          title="Contact us"
+          isOpen={showModal}
+          handleDismiss={() => setShowModal(false)}
+        >
+          <ContactForm />  
+        </Modal>
+
       </Main>
 
     </>
