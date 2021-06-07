@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 import { X } from 'react-feather';
 
+const MOBILE_BREAKPOINT = 550;
+
 const Modal = (props) => {
   const {
     title,
@@ -12,7 +14,7 @@ const Modal = (props) => {
   if (!isOpen) {
     return null
   }
-  
+
   return (
     <Overlay>
       <Content>
@@ -47,11 +49,25 @@ const Content = styled.div`
   background: white;
   position: relative;
   border-radius: 8px;
+
+  @media (max-width: ${MOBILE_BREAKPOINT}px) {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+  }
 `
 
 const Header = styled.div`
   padding: 16px;
   padding-bottom: 8px;
+
+  @media (max-width: ${MOBILE_BREAKPOINT}px) {
+    padding: 8px;
+    padding-left: 16px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid hsl(0deg 0% 80%);
+  }
 `
 
 const Title = styled.h2`
@@ -66,6 +82,14 @@ const CloseButton = styled.button`
   border: none;
   color: white;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (max-width: ${MOBILE_BREAKPOINT}px) {
+    position: static;
+    color: black;
+  }
 `
 
 const VisuallyHidden = styled.span`
