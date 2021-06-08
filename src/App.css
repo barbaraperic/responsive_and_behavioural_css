@@ -139,6 +139,27 @@ html {
 }
 
 :root {
+  --red-hue: 0deg;
+  --intense: 100% 50%;
+
+  --red: hsl(var(--red-hue) var(--intense));
+  --orange: hsl(
+    calc(var(--red-hue) + 20deg)
+    var(--intense)
+  );
+  --yellow: hsl(
+    calc(var(--red-hue) + 40deg)
+    var(--intense)
+  );
+  --pinkred: hsl(
+    calc(var(--red-hue) - 20deg)
+    var(--intense)
+  );
+  --pink: hsl(
+    calc(var(--red-hue) - 40deg)
+    var(--intense)
+  );
+
   --gray: 270deg;
   --color-gray-100: hsl(var(--gray) 20% 95%);
   --color-gray-300: hsl(var(--gray) 10% 75%);
@@ -146,19 +167,19 @@ html {
   --color-gray-700: hsl(var(--gray) 10% 30%);
   --color-gray-900: hsl(var(--gray) 15% 15%);
 
-  --blue: 245deg;
-  --color-primary: hsl(var(--blue) 90% 50%);
-  --color-primary-light: hsl(var(--blue) 90% 70%);
-  --color-primary-dark: hsl(var(--blue) 90% 30%);
-  --color-primary-alpha-300: hsl(var(--blue) 90% 50% / 0.3);
-  --color-primary-alpha-500: hsl(var(--blue) 90% 50% / 0.5);
-  --color-primary-alpha-700: hsl(var(--blue) 90% 50% / 0.7);
+  --primary: 50deg 90%;
+  --color-primary: hsl(var(--primary) 50%);
+  --color-primary-light: hsl(var(--primary) 70%);
+  --color-primary-dark: hsl(var(--primary) 30%);
+  --color-primary-alpha-300: hsl(var(--primary) 50% / 0.3);
+  --color-primary-alpha-500: hsl(var(--primary) 50% / 0.5);
+  --color-primary-alpha-700: hsl(var(--primary) 50% / 0.7);
 
-  --red: 350deg;
-  --color-secondary: hsl(var(--red) 95% 50%);
-  --color-secondary-light: hsl(var(--red) 95% 70%);
-  --color-secondary-dark: hsl(var(--red) 95% 30%);
-  --color-secondary-alpha-300: hsl(var(--red) 95% 50% / 0.3);
-  --color-secondary-alpha-500: hsl(var(--red) 95% 50% / 0.5);
-  --color-secondary-alpha-700: hsl(var(--red) 95% 50% / 0.7);
+  --secondary: 330deg 75%;
+  --color-secondary: hsl(var(--secondary) 50%);
+  --color-secondary-light: hsl(var(--secondary) 70%);
+  --color-secondary-dark: hsl(var(--secondary) 30%);
+  --color-secondary-alpha-300: hsl(var(--secondary) 50% / 0.3);
+  --color-secondary-alpha-500: hsl(var(--secondary) 50% / 0.5);
+  --color-secondary-alpha-700: hsl(var(--secondary) 50% / 0.7);
 }

@@ -10,7 +10,7 @@ const ColourGradient = () => {
         <Box style={{ backgroundColor: "var(--color-gray-700)"}}></Box>
         <Box style={{ backgroundColor: "var(--color-gray-900)"}}></Box>
       </Wrapper>
-      <Wrapper>
+      {/* <Wrapper>
         <Box style={{ backgroundColor: "var(--color-primary)"}}></Box>
         <Box style={{ backgroundColor: "var(--color-primary-light)"}}></Box>
         <Box style={{ backgroundColor: "var(--color-primary-dark)"}}></Box>
@@ -29,6 +29,13 @@ const ColourGradient = () => {
           <Box style={{ backgroundColor: "var(--color-secondary-alpha-500)"}}></Box>
           <Box style={{ backgroundColor: "var(--color-secondary-alpha-700)"}}></Box>
         </Background>
+      </Wrapper> */}
+      <Wrapper>
+        <Box style={{ backgroundColor: "var(--red)"}}></Box>
+        <Box style={{ backgroundColor: "var(--orange)"}}></Box>
+        <Box style={{ backgroundColor: "var(--yellow)"}}></Box>
+        <Box style={{ backgroundColor: "var(--pinkred)"}}></Box>
+        <Box style={{ backgroundColor: "var(--pink)"}}></Box>
       </Wrapper>
     </>
   )
