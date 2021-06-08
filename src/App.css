@@ -8,6 +8,8 @@
    License: none (public domain)
 */
 
+
+
 html,
 body,
 div,
@@ -134,4 +136,29 @@ table {
 
 html {
   --reach-dialog: 1;
+}
+
+:root {
+  --gray: 270deg;
+  --color-gray-100: hsl(var(--gray) 20% 95%);
+  --color-gray-300: hsl(var(--gray) 10% 75%);
+  --color-gray-500: hsl(var(--gray) 5% 50%);
+  --color-gray-700: hsl(var(--gray) 10% 30%);
+  --color-gray-900: hsl(var(--gray) 15% 15%);
+
+  --blue: 245deg;
+  --color-primary: hsl(var(--blue) 90% 50%);
+  --color-primary-light: hsl(var(--blue) 90% 70%);
+  --color-primary-dark: hsl(var(--blue) 90% 30%);
+  --color-primary-alpha-300: hsl(var(--blue) 90% 50% / 0.3);
+  --color-primary-alpha-500: hsl(var(--blue) 90% 50% / 0.5);
+  --color-primary-alpha-700: hsl(var(--blue) 90% 50% / 0.7);
+
+  --red: 350deg;
+  --color-secondary: hsl(var(--red) 95% 50%);
+  --color-secondary-light: hsl(var(--red) 95% 70%);
+  --color-secondary-dark: hsl(var(--red) 95% 30%);
+  --color-secondary-alpha-300: hsl(var(--red) 95% 50% / 0.3);
+  --color-secondary-alpha-500: hsl(var(--red) 95% 50% / 0.5);
+  --color-secondary-alpha-700: hsl(var(--red) 95% 50% / 0.7);
 }
