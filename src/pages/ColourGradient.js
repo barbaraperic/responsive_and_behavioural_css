@@ -36,6 +36,7 @@ const ColourGradient = () => {
         <Box style={{ backgroundColor: "var(--yellow)"}}></Box>
         <Box style={{ backgroundColor: "var(--pinkred)"}}></Box>
         <Box style={{ backgroundColor: "var(--pink)"}}></Box>
+        <Box style={{ background: "linear-gradient(45deg, var(--orange), var(--yellow))"}}></Box>
       </Wrapper>
     </>
   )
